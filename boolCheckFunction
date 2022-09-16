@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+bool check(const std::vector<std::string>& seq, const std::string& elem) {
+    if (std::find(seq.begin(), seq.end(), elem) != seq.end()){
+    return true;
+    }
+    else {
+    return false;
+    }
+}
+
+int main(){
+    
+    cout << check({"a", "x", "z", "4", "b"}, "b");
+    
+    return 0;
+}
